@@ -1,0 +1,25 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "HyppurBroccoliNFT.sol": {
+      "content": "// YOUR_FLATTENED_CONTRACT_CODE"
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    },
+    "viaIR": true,
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode",
+          "evm.deployedBytecode",
+          "evm.methodIdentifiers"
+        ]
+      }
+    }
+  }
+}

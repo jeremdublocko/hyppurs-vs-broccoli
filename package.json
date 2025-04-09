@@ -1,0 +1,39 @@
+{
+  "name": "hyppur-vs-broccoli-contracts",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "compile": "hardhat compile",
+    "deploy:nft": "hardhat run scripts/deploy-nft.ts --network amoy",
+    "deploy:token": "hardhat run scripts/deploy-token.ts --network amoy",
+    "deploy:staking": "hardhat run scripts/deploy-staking.ts --network amoy",
+    "deploy:all": "npm run deploy:nft && npm run deploy:token && npm run deploy:staking",
+    "deploy-frontend": "node scripts/deploy-frontend.js",
+    "deploy-contracts": "hardhat run scripts/deploy.js --network amoy",
+    "verify-nft": "hardhat verify --network amoy --constructor-args scripts/verify-args.js REPLACE_WITH_CONTRACT_ADDRESS",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.3",
+    "dotenv": "^16.3.1",
+    "ethers": "^6.13.5",
+    "next": "^14.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "@types/node": "^20.10.5",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "autoprefixer": "^10.4.16",
+    "hardhat": "^2.19.3",
+    "postcss": "^8.4.31",
+    "tailwindcss": "^3.3.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.3"
+  }
+}
